@@ -1,0 +1,515 @@
+m255
+K3
+13
+cModel Technology
+Z0 dU:\EE316\EE316_Project_1\simulation\modelsim
+Ebtn_debounce_toggle
+Z1 w1706106986
+Z2 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z3 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+Z4 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z5 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z6 dU:\EE316\EE316_Project_1\simulation\modelsim
+Z7 8U:/EE316/EE316_Project_1/btn_debounce_toggle.vhd
+Z8 FU:/EE316/EE316_Project_1/btn_debounce_toggle.vhd
+l0
+L32
+VaE75?aXQH9SSmW=KB6A3Z3
+Z9 OV;C;10.1d;51
+31
+Z10 !s108 1706298402.224000
+Z11 !s90 -reportprogress|300|-93|-work|work|U:/EE316/EE316_Project_1/btn_debounce_toggle.vhd|
+Z12 !s107 U:/EE316/EE316_Project_1/btn_debounce_toggle.vhd|
+Z13 o-93 -work work -O0
+Z14 tExplicit 1
+!s100 FF9dY`ima7TQ;>FY^8]W>2
+!i10b 1
+Abehavioral
+R2
+R3
+R4
+R5
+DEx4 work 19 btn_debounce_toggle 0 22 aE75?aXQH9SSmW=KB6A3Z3
+l52
+L42
+V49m8MOAaaSjFzVCN3kJ;g2
+R9
+31
+R10
+R11
+R12
+R13
+R14
+!s100 h76?7i]L;BSNoKGSngzkm3
+!i10b 1
+Eclk_enabler
+Z15 w1706207029
+Z16 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+R4
+R5
+R6
+Z17 8U:/EE316/EE316_Project_1/clk_enabler.vhd
+Z18 FU:/EE316/EE316_Project_1/clk_enabler.vhd
+l0
+L7
+V5IURW:AXN0Im=BA2_8=mJ2
+R9
+31
+Z19 !s108 1706298406.521000
+Z20 !s90 -reportprogress|300|-93|-work|work|U:/EE316/EE316_Project_1/clk_enabler.vhd|
+Z21 !s107 U:/EE316/EE316_Project_1/clk_enabler.vhd|
+R13
+R14
+!s100 Ol7neFKWF39Jg=o]S?4he1
+!i10b 1
+Abehv
+R16
+R4
+R5
+DEx4 work 11 clk_enabler 0 22 5IURW:AXN0Im=BA2_8=mJ2
+l25
+L19
+VIV0;inE^AHbnz1JjfckDo3
+R9
+31
+R19
+R20
+R21
+R13
+R14
+!s100 k70gNb>cKaBUQJ`b>ZUR_0
+!i10b 1
+Ede2_115
+Z22 w1706238763
+R4
+R5
+R6
+Z23 8U:/EE316/EE316_Project_1/DE2_115.vhd
+Z24 FU:/EE316/EE316_Project_1/DE2_115.vhd
+l0
+L4
+VZCnTJHK5bQ9OQfOgTmcFT2
+R9
+31
+Z25 !s108 1706298406.743000
+Z26 !s90 -reportprogress|300|-93|-work|work|U:/EE316/EE316_Project_1/DE2_115.vhd|
+Z27 !s107 U:/EE316/EE316_Project_1/DE2_115.vhd|
+R13
+R14
+!s100 7@94i889F[TW[K4<0m7`83
+!i10b 1
+Astructural
+R4
+R5
+DEx4 work 7 de2_115 0 22 ZCnTJHK5bQ9OQfOgTmcFT2
+l159
+L132
+VQ9HEG;;IX]P7G^4n>M?k91
+R9
+31
+R25
+R26
+R27
+R13
+R14
+!s100 fj5ETG]EZh<hE[E1?[hc61
+!i10b 1
+Elut
+R1
+R4
+R5
+R6
+Z28 8U:/EE316/EE316_Project_1/LUT.vhd
+Z29 FU:/EE316/EE316_Project_1/LUT.vhd
+l0
+L4
+Vz5C9<N[ES=Qj=BA=QT2fF1
+R9
+31
+Z30 !s108 1706298412.414000
+Z31 !s90 -reportprogress|300|-93|-work|work|U:/EE316/EE316_Project_1/LUT.vhd|
+Z32 !s107 U:/EE316/EE316_Project_1/LUT.vhd|
+R13
+R14
+!s100 DEno[QDW8ZP39[lSBI?;O2
+!i10b 1
+Abehavioral
+R4
+R5
+DEx4 work 3 lut 0 22 z5C9<N[ES=Qj=BA=QT2fF1
+l17
+L14
+V^LQY2`M3meKl[JKXOm4Dj0
+R9
+31
+R30
+R31
+R32
+R13
+R14
+!s100 feVYFlbC`zWhon71_jGN<2
+!i10b 1
+Ereset_delay
+Z33 w1706106988
+R16
+R4
+R5
+R6
+Z34 8U:/EE316/EE316_Project_1/reset_delay.vhd
+Z35 FU:/EE316/EE316_Project_1/reset_delay.vhd
+l0
+L8
+VNHAo[gN;Eh:ac^XV`cEK81
+R9
+31
+Z36 !s108 1706298407.552000
+Z37 !s90 -reportprogress|300|-93|-work|work|U:/EE316/EE316_Project_1/reset_delay.vhd|
+Z38 !s107 U:/EE316/EE316_Project_1/reset_delay.vhd|
+R13
+R14
+!s100 KA2I2C3FU<fjldhHTA3:;2
+!i10b 1
+Aarch
+R16
+R4
+R5
+DEx4 work 11 reset_delay 0 22 NHAo[gN;Eh:ac^XV`cEK81
+l21
+L17
+V5JS[LklNCIPKz3f[1c2GY2
+R9
+31
+R36
+R37
+R38
+R13
+R14
+!s100 gAcQJO>b4nEGdGgc0InEH0
+!i10b 1
+Erom1p
+R33
+R4
+R5
+R6
+Z39 8U:/EE316/EE316_Project_1/rom1p.vhd
+Z40 FU:/EE316/EE316_Project_1/rom1p.vhd
+l0
+L42
+VkEScXhb]4Je[aEe4Ia^eC2
+R9
+31
+Z41 !s108 1706298406.993000
+Z42 !s90 -reportprogress|300|-93|-work|work|U:/EE316/EE316_Project_1/rom1p.vhd|
+Z43 !s107 U:/EE316/EE316_Project_1/rom1p.vhd|
+R13
+R14
+!s100 nU:3`;5HKf24@?@cOf19W0
+!i10b 1
+Asyn
+R4
+R5
+DEx4 work 5 rom1p 0 22 kEScXhb]4Je[aEe4Ia^eC2
+l82
+L52
+VzE>P=jV@kA=FdNQgRLff70
+R9
+31
+R41
+R42
+R43
+R13
+R14
+!s100 dDhDXUjn;lA9OOeIfj6^23
+!i10b 1
+Eseg_controller
+Z44 w1706232946
+R16
+R4
+R5
+R6
+Z45 8U:/EE316/EE316_Project_1/7seg_controller.vhd
+Z46 FU:/EE316/EE316_Project_1/7seg_controller.vhd
+l0
+L6
+Vn422G4kS]<CeTHX@M[OSk2
+R9
+31
+Z47 !s108 1706298412.664000
+Z48 !s90 -reportprogress|300|-93|-work|work|U:/EE316/EE316_Project_1/7seg_controller.vhd|
+Z49 !s107 U:/EE316/EE316_Project_1/7seg_controller.vhd|
+R13
+R14
+!s100 6zR_2;`fUW`SEG9<9J0M;2
+!i10b 1
+Astruct
+R16
+R4
+R5
+DEx4 work 14 seg_controller 0 22 n422G4kS]<CeTHX@M[OSk2
+l22
+L20
+V4Q^mjS^zk5<;>LYkH:>FR3
+R9
+31
+R47
+R48
+R49
+R13
+R14
+!s100 :U^1Oc55NHzO9G77R?8Dk3
+!i10b 1
+Eshift_controller
+Z50 w1706238944
+R16
+R4
+R5
+R6
+Z51 8U:/EE316/EE316_Project_1/shift_Register_controller.vhd
+Z52 FU:/EE316/EE316_Project_1/shift_Register_controller.vhd
+l0
+L6
+VbAzjbPf[@8MY=meASD8dV0
+!s100 ge3VZddKHSd1cSa]FiI@Q3
+R9
+31
+!i10b 1
+Z53 !s108 1706298412.894000
+Z54 !s90 -reportprogress|300|-93|-work|work|U:/EE316/EE316_Project_1/shift_Register_controller.vhd|
+Z55 !s107 U:/EE316/EE316_Project_1/shift_Register_controller.vhd|
+R13
+R14
+Astruct
+R16
+R4
+R5
+DEx4 work 16 shift_controller 0 22 bAzjbPf[@8MY=meASD8dV0
+l20
+L18
+V4JOnC`Kbf<0WKIQ:VAi`E1
+!s100 PVcl3CcV8V7DE@gBIJ>3=0
+R9
+31
+!i10b 1
+R53
+R54
+R55
+R13
+R14
+Eshift_register
+R33
+R4
+R5
+R6
+Z56 8U:/EE316/EE316_Project_1/Shift_Register.vhd
+Z57 FU:/EE316/EE316_Project_1/Shift_Register.vhd
+l0
+L8
+VdXZKcZN?`SkKk?Eg<?Ec00
+R9
+31
+Z58 !s108 1706298411.880000
+Z59 !s90 -reportprogress|300|-93|-work|work|U:/EE316/EE316_Project_1/Shift_Register.vhd|
+Z60 !s107 U:/EE316/EE316_Project_1/Shift_Register.vhd|
+R13
+R14
+!s100 ?3N;zI1K2z]XoXYXW4edb2
+!i10b 1
+Abehavioral
+R4
+R5
+DEx4 work 14 shift_register 0 22 dXZKcZN?`SkKk?Eg<?Ec00
+l22
+L19
+V0@E]Sdi=HHS[RmO<M4m[T3
+R9
+31
+R58
+R59
+R60
+R13
+R14
+!s100 H;g[hM1TEkmaN3U757NAQ1
+!i10b 1
+Eshift_register_address
+R33
+R4
+R5
+R6
+Z61 8U:/EE316/EE316_Project_1/Shift_Register_Address.vhd
+Z62 FU:/EE316/EE316_Project_1/Shift_Register_Address.vhd
+l0
+L4
+VjC48K;:2fPcJSggDJcSWP2
+R9
+31
+Z63 !s108 1706298412.130000
+Z64 !s90 -reportprogress|300|-93|-work|work|U:/EE316/EE316_Project_1/Shift_Register_Address.vhd|
+Z65 !s107 U:/EE316/EE316_Project_1/Shift_Register_Address.vhd|
+R13
+R14
+!s100 U?Nfjfz442k^zan;WQde@3
+!i10b 1
+Abehavioral
+R4
+R5
+DEx4 work 22 shift_register_address 0 22 jC48K;:2fPcJSggDJcSWP2
+l18
+L15
+VkVZ:bziZn4=NoPb^S8mXB2
+R9
+31
+R63
+R64
+R65
+R13
+R14
+!s100 SgIWlalhEeK5eKKeH;M_^0
+!i10b 1
+Esram_ctrl
+Z66 w1706200584
+R4
+R5
+R6
+Z67 8U:/EE316/EE316_Project_1/SRAM_Controller.vhd
+Z68 FU:/EE316/EE316_Project_1/SRAM_Controller.vhd
+l0
+L4
+V1Bd6_;o8F2H0NG6W^2;6h3
+R9
+31
+Z69 !s108 1706298401.950000
+Z70 !s90 -reportprogress|300|-93|-work|work|U:/EE316/EE316_Project_1/SRAM_Controller.vhd|
+Z71 !s107 U:/EE316/EE316_Project_1/SRAM_Controller.vhd|
+R13
+R14
+!s100 A4?3do2KZX;BC8VJRM>ZP1
+!i10b 1
+Aarch
+R4
+R5
+DEx4 work 9 sram_ctrl 0 22 1Bd6_;o8F2H0NG6W^2;6h3
+l38
+L24
+VXkIVa>lEnGYLMRf6:iL9O0
+R9
+31
+R69
+R70
+R71
+R13
+R14
+!s100 ;QCCjlT7NQdz>3odFPXZJ3
+!i10b 1
+Estate_machine
+Z72 w1706298288
+R3
+R2
+R4
+R5
+R6
+Z73 8U:/EE316/EE316_Project_1/stateMachine.vhd
+Z74 FU:/EE316/EE316_Project_1/stateMachine.vhd
+l0
+L6
+V@]FIfXj3CYAU:M^EoeAY_3
+R9
+31
+Z75 !s108 1706298411.634000
+Z76 !s90 -reportprogress|300|-93|-work|work|U:/EE316/EE316_Project_1/stateMachine.vhd|
+Z77 !s107 U:/EE316/EE316_Project_1/stateMachine.vhd|
+R13
+R14
+!s100 M@86[PWk1oH]V`]ZMDTj93
+!i10b 1
+Abehavioral
+R3
+R2
+R4
+R5
+DEx4 work 13 state_machine 0 22 @]FIfXj3CYAU:M^EoeAY_3
+l31
+L25
+VNTNi7kA_z9:8:D4F99_e^2
+R9
+31
+R75
+R76
+R77
+R13
+R14
+!s100 YUO][Z[ZT`7_heGK4DeIk3
+!i10b 1
+Etop_level
+Z78 w1706238943
+R16
+R4
+R5
+R6
+Z79 8U:/EE316/EE316_Project_1/top_level.vhd
+Z80 FU:/EE316/EE316_Project_1/top_level.vhd
+l0
+L10
+V^lGQ=TzG4GWnB^DgiQUFS3
+R9
+31
+Z81 !s108 1706298407.212000
+Z82 !s90 -reportprogress|300|-93|-work|work|U:/EE316/EE316_Project_1/top_level.vhd|
+Z83 !s107 U:/EE316/EE316_Project_1/top_level.vhd|
+R13
+R14
+!s100 abgY?B<83of1:c9UkI9=92
+!i10b 1
+Astructural
+R16
+R4
+R5
+DEx4 work 9 top_level 0 22 ^lGQ=TzG4GWnB^DgiQUFS3
+l267
+L34
+VM=KASf3E^6nW0Dk[?]^6h2
+R9
+31
+R81
+R82
+R83
+R13
+R14
+!s100 GlkddJeZUT=Sbg5i90kN42
+!i10b 1
+Euniv_bin_counter
+R33
+R16
+R4
+R5
+R6
+Z84 8U:/EE316/EE316_Project_1/univ_bin_counter.vhd
+Z85 FU:/EE316/EE316_Project_1/univ_bin_counter.vhd
+l0
+L10
+V0lz3@?[kAiCVeS?RY>GEB0
+R9
+31
+Z86 !s108 1706298409.065000
+Z87 !s90 -reportprogress|300|-93|-work|work|U:/EE316/EE316_Project_1/univ_bin_counter.vhd|
+Z88 !s107 U:/EE316/EE316_Project_1/univ_bin_counter.vhd|
+R13
+R14
+!s100 YV@ZAn]bho7O5;iKCP34<0
+!i10b 1
+Aarch
+R16
+R4
+R5
+DEx4 work 16 univ_bin_counter 0 22 0lz3@?[kAiCVeS?RY>GEB0
+l28
+L22
+VYHET8i]2YNfUG4I:d8F<M3
+R9
+31
+R86
+R87
+R88
+R13
+R14
+!s100 D;`@`o8RFWo4LI4VO44D12
+!i10b 1

@@ -1,0 +1,163 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity sram_ctrl is
+port(
+   clk						  : in std_logic;  
+	reset                  : in std_logic;
+   rw                     : in std_logic;
+	pulse   					  : in std_logic;-- read write, 1 read, 0 write,
+   address_in             : in std_logic_vector(7 downto 0);  --address 8 bit address 
+   data_in                : in std_logic_vector(15 downto 0);  -- 8 bit data to be written to sram 
+   SRAM_addr              : out std_logic_vector(19 downto 0);  -- sent to sram  
+	data_out               : out std_logic_vector(15 downto 0);
+   we_n 						  : out std_logic;
+	oe_n                   : out std_logic;  -- sent to sram 
+   io                     : inout std_logic_vector(15 downto 0);  -- goes into i/o  
+   ce_n                   : out std_logic; -- tied low
+   lb_n						  : out std_logic;
+	ub_n						  : out std_logic
+); 
+
+end sram_ctrl;
+
+architecture arch of sram_ctrl is
+
+
+type state_type is (Ready, read_1, read_2, write_1, write_2);
+signal state     : state_type;
+signal tri                   : std_logic;
+signal oe_s                  : std_logic;
+signal we_s						  : std_logic;
+signal we_s2, oe_s2			  : std_logic;
+signal address_s				  : std_logic_vector(7 downto 0);
+signal data_s					  : std_logic_vector(15 downto 0);
+signal io_s						  : std_logic_vector(7 downto 0);
+ --state_next 
+
+begin
+
+ce_n <= '0';
+lb_n <= '0';
+ub_n <= '0';
+io <= data_in when tri = '1' else (others => 'Z');
+SRAM_addr(19 downto 8)  <= "000000000000"; 
+oe_n <= oe_s;
+we_n <= we_s;
+SRAM_addr(7 downto 0) <= address_s;
+data_out <= data_s;
+
+process(clk, reset)
+begin
+if (reset = '1') then 
+state <= Ready;
+	we_s <= '1';
+   oe_s <= '1';
+	tri  <= '1';
+	elsif (clk'event and clk = '1') then
+state <= state;
+--oe_s  <= oe_s2;
+--we_s	<= we_s2;
+end if;
+end process;
+
+
+process(state, pulse, rw, io, data_in, address_in, address_s, data_s, io_s)
+--, address_in, data_in, io
+begin
+
+
+case state is
+
+when Ready => 
+  we_s <= '1';
+  oe_s <= '1';
+  tri  <= '0';
+   if rw = '1' and pulse = '1'  then
+   state <= read_1;
+   end if;
+   if rw = '0' and pulse = '1'  then 
+   state <= write_1;
+   end if;
+--	end if;
+when read_1 =>
+oe_s2 <= '0';
+we_s2 <= '1';
+tri  <= '0';
+--if rising_edge(clk) then
+state <= read_2;
+--end if;
+
+when read_2 =>
+oe_s <= '1';
+we_s <= '1';
+tri  <= '0';
+data_s <= io;
+--if rising_edge(clk) then
+state <= Ready;
+--end if;
+
+when write_1 =>
+data_s <= data_in;
+oe_s <= '1';
+we_s <= '0';
+tri  <= '1';
+--if rising_edge(clk) then
+state <= write_2;
+--end if;
+
+when write_2 =>
+io_s <= address_in;
+oe_s <= '1';
+we_s <= '1';
+tri  <= '1';
+--if rising_edge(clk) then
+state <= Ready;
+
+--end if;
+
+when others => 
+state <= Ready;
+
+end case;
+
+end process;
+
+--process(state_next)
+--
+--begin
+--  
+--  case state_next is 
+--  when Ready =>
+--  we_s2 <= '1';
+--  oe_s2 <= '1';
+--  tri  <= '0';
+--when read_1 =>
+--oe_s2 <= '0';
+--we_s2 <= '1';
+--tri  <= '0';
+--
+--when read_2 =>
+--oe_s2 <= '1';
+--we_s2 <= '1';
+--tri  <= '0';
+--
+--when write_1 =>
+--oe_s2 <= '1';
+--we_s2 <= '0';
+--tri  <= '1';
+--
+--
+--when write_2 =>
+--oe_s2 <= '1';
+--we_s2 <= '1';
+--tri  <= '1';
+
+
+--end case;
+--end process;
+
+
+
+
+end arch;

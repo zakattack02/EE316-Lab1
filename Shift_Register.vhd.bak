@@ -1,0 +1,29 @@
+-- FPGA projects using VHDL/ VHDL 
+-- fpga4student.com
+-- VHDL code for D Flip FLop
+-- VHDL code for rising edge D flip flop 
+Library IEEE;
+USE IEEE.Std_logic_1164.all;
+
+entity Shift_Register is 
+   port(
+      keypad_data_in :in std_logic_vector(3 downto 0);    
+      Clk            :in std_logic;
+		clk_en_5ms     :in std_logic;
+      pulse_5ms      :in std_logic;
+		Q					:out std_logic_vector(15 downto 0)
+		
+   );
+end Shift_Register;
+architecture Behavioral of Shift_Register is  
+begin  
+ process(Clk)
+ begin 
+    if rising_edge(Clk) and clk_en_5ms = '1' and pulse_5ms = '1' then
+		Q(3 downto 0) <= keypad_data_in;
+		Q(7 downto 4) <= QQ(3 downto 0);
+		Q(11 downto 8) <= Q(7 downto 4);
+		Q(15 downto 12) <= Q(11 downto 8);
+    end if;       
+ end process;  
+end Behavioral; 

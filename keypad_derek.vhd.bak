@@ -1,0 +1,100 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity keypad is
+port(
+   clk						  : in std_logic; 
+	rows						  : in std_logic_vector(4 downto 0);
+	pulse_5ms   			  : out std_logic;-- read write, 1 read, 0 write,
+	pulse_20ns			     : out std_logic;
+	columns					  : out std_logic_vector(3 downto 0);
+	keypad					  : out std_logic_vector(4 downto 0)
+
+); 
+
+end keypad;
+
+architecture arch of keypad is
+
+type state_type is (columns_1, columns_2, columns_3, columns_4);
+signal state     : state_type;
+
+begin
+
+process(clk)
+
+begin 
+
+if rising_edge(clk, rows) then
+
+case state is
+
+when columns_1 =>
+
+columns <= "0111";
+
+if rows(0) = '0' then
+keypad <= "01010";
+elsif rows(1) = '0' then
+keypad <= "00001";
+elsif rows(2) = '0' then
+keypad <= "00100";
+elsif rows(3) = '0' then
+keypad <= "00111";
+end if;
+state <= columns_2 ;
+
+when columns_2 =>
+
+columns <= "1011";
+
+if rows(0) = '0' then
+keypad <= "01011";
+elsif rows(1) = '0' then
+keypad <= "00010";
+elsif rows(2) = '0' then
+keypad <= "00101";
+elsif rows(3) = '0' then
+keypad <= "01000";
+end if;
+
+state <= columns_3;
+
+when columns_3 =>
+
+columns <= "1101";
+
+if rows(0) = '0' then
+keypad <= "01100";
+elsif rows(1) = '0' then
+keypad <= "00011";
+elsif rows(2) = '0' then
+keypad <= "00110";
+elsif rows(3) = '0' then
+keypad <= "01001";
+end if;
+
+state <= columns_4;
+
+when columns_4 =>
+
+columns <= "1110";
+
+
+if rows(0) = '0' then
+keypad <= "01101";
+elsif rows(1) = '0' then
+keypad <= "01110";
+elsif rows(2) = '0' then
+keypad <= "01111";
+elsif rows(3) = '0' then
+keypad <= "10000";
+end if;
+
+state <= columns_1;
+
+end case;
+end if;
+end process;
+
+end arch;

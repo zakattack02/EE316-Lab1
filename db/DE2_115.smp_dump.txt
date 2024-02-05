@@ -1,0 +1,27 @@
+
+State Machine - |DE2_115|top_level:Inst_top_level|Keypad_controller:Inst_kpc|next_state
+Name next_state.St_D next_state.St_C next_state.St_B next_state.St_A 
+next_state.St_A 0 0 0 0 
+next_state.St_B 0 0 1 1 
+next_state.St_C 0 1 0 1 
+next_state.St_D 1 0 0 1 
+
+State Machine - |DE2_115|top_level:Inst_top_level|State_Machine:inst_State_Machine|current_state
+Name current_state.Prog_DOWN_ADDress current_state.Prog_DOWN_DATA current_state.Prog_UP_ADDress current_state.Prog_UP_DATA current_state.OP_DOWN_Pause current_state.OP_DOWN current_state.OP_UP current_state.OP_UP_Pause current_state.INIT 
+current_state.INIT 0 0 0 0 0 0 0 0 0 
+current_state.OP_UP_Pause 0 0 0 0 0 0 0 1 1 
+current_state.OP_UP 0 0 0 0 0 0 1 0 1 
+current_state.OP_DOWN 0 0 0 0 0 1 0 0 1 
+current_state.OP_DOWN_Pause 0 0 0 0 1 0 0 0 1 
+current_state.Prog_UP_DATA 0 0 0 1 0 0 0 0 1 
+current_state.Prog_UP_ADDress 0 0 1 0 0 0 0 0 1 
+current_state.Prog_DOWN_DATA 0 1 0 0 0 0 0 0 1 
+current_state.Prog_DOWN_ADDress 1 0 0 0 0 0 0 0 1 
+
+State Machine - |DE2_115|top_level:Inst_top_level|sram_ctrl:Inst_sram_crtl|state
+Name state.write_2 state.write_1 state.read_2 state.read_1 state.Ready 
+state.Ready 0 0 0 0 0 
+state.read_1 0 0 0 1 1 
+state.read_2 0 0 1 0 1 
+state.write_1 0 1 0 0 1 
+state.write_2 1 0 0 0 1 
