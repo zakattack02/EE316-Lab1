@@ -1,2 +1,3 @@
-# EE316-Project1
-Contains vhdl code and other files needed for EE 316 Project 1 SRAM controller design.
+# EE316-Lab 1
+
+This repository holds our project for EE316 (Computer Engineering Junior Lab) Lab 2 - vhdl code and other files needed for EE 316 Project 1 SRAM controller design.
